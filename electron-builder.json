@@ -1,0 +1,29 @@
+{
+  "appId": "indi.atlantis-l.app.radix-desktop-tool",
+  "asar": true,
+  "productName": "Radix Tool",
+  "directories": {
+    "output": "release"
+  },
+  "files": ["dist", "dist-electron"],
+  "mac": {
+    "target": ["dmg"],
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+  },
+  "dmg": {
+    "iconSize": 100,
+    "iconTextSize": 16,
+    "window": {
+      "width": 530,
+      "height": 390
+    }
+  },
+  "win": {
+    "target": ["portable"],
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}"
+  }
+}
